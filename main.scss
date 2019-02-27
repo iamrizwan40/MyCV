@@ -1,0 +1,168 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #edeeef;
+    color: #333;
+    font-size: 16px;
+    font-family: 'B612';
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+/* Side menus start */
+.side{
+    box-sizing: border-box;
+    position: fixed;
+    top: 53px;
+    left: 0;
+    width: 250px;
+    background-color: rgb(65, 150, 156);
+    height: 100%;
+    // padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 50px);
+    box-shadow: 5px 10px 10px rgba(0,0,0,.5);
+    border-right: 5px solid aliceblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.side ul{
+    list-style: none;
+    display: block;
+    grid-row-start: 4;
+    grid-row-end: 12;
+}
+
+.side ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 3em;
+}
+/* Side menus ends */
+
+/* main section starts */
+.main{
+    margin-left: 250px;
+    margin-top: 40px;
+    padding: 2em;
+}
+/* main section ends */
+
+
+/* header starts */
+.header{   
+    position: fixed;
+    top: 0;
+    background-color:  rgb(65, 150, 156) ;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    color: #fff;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    // padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.cv{
+    display: inline-block;
+    grid-column-start:1;
+    grid-column-end: 13;
+}
+.cv span:nth-child(1){
+    font-size: 200%;
+    // display: inline-block;
+}
+.cv span:nth-child(2){
+    display: block;
+    height: 5px;
+    background-color:aliceblue;
+    margin: 0 auto;
+}
+/* header starts */
+
+// .para{
+//     // padding: 1em;
+// }
+
+/* Hamburger Icon Starts */
+
+// .hamburger a{
+//     position: fixed;
+//     margin-left: 190px;
+//     margin-top: 23px;
+//     font-size: 36px;
+//     font-weight: bold;
+//     color:rgb(15, 40, 61);
+//     text-decoration: none;
+//     // background-color: rgb(65, 150, 156);
+//     padding-left: .3em;
+//     padding-right: .3em;
+// }
+
+.close a{
+    display: none;
+    float: right;
+    padding: .5em;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(235, 242, 243);
+    padding-top: .3em;
+}
+
+@media (max-width:785px){
+    .side{
+        position: fixed;
+        width: 250px;
+        background-color: rgb(65, 150, 156);
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 50px);
+        box-shadow: 5px 10px 10px rgba(0,0,0,.5);
+        transition: left 1s ease-in-out;
+    }
+    
+    .side-toggle{
+        left: -350px;
+    }
+
+    .hamburger a{
+        position: fixed;
+        margin-left: 0;
+        margin-top: 0px;
+        font-size: 36px;
+        font-weight: bold;
+        color:rgb(65, 150, 156);
+        text-decoration: none;
+        // background-color: rgba(76, 112, 145,.4);
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+    
+
+    .main{
+        margin:53px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .close a{
+        display: block;
+        float: right;
+        padding: .5em;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 30px;
+        color: rgb(235, 242, 243);
+        padding-top: .3em;
+    }
+}
