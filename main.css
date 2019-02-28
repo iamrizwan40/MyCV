@@ -7622,13 +7622,19 @@ body {
 .side ul {
   list-style: none;
   display: block;
-  grid-row-start: 4;
+  grid-row-start: 3;
   grid-row-end: 12; }
 
 .side ul li a {
   text-decoration: none;
   color: #fff;
-  line-height: 3em; }
+  line-height: 3em;
+  transition: 100ms ease-in-out; }
+
+.side ul li a:hover {
+  text-decoration: underline;
+  color: #f3e8e8;
+  transition: 100ms ease-in-out; }
 
 /* Side menus ends */
 /* main section starts */
@@ -7717,5 +7723,13 @@ body {
     font-size: 30px;
     color: #ebf2f3;
     padding-top: .3em; } }
+@media (max-width: 500px) {
+  .side {
+    width: 100%;
+    left: -520px;
+    border-right: none; }
+
+  .side-toggle {
+    left: 0px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -37,7 +37,7 @@ body{
 .side ul{
     list-style: none;
     display: block;
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 12;
 }
 
@@ -45,6 +45,13 @@ body{
     text-decoration: none;
     color: #fff;
     line-height: 3em;
+    transition: 100ms ease-in-out;
+}
+
+.side ul li a:hover{
+    text-decoration: underline;
+    color: rgb(243, 232, 232);
+    transition: 100ms ease-in-out;
 }
 /* Side menus ends */
 
@@ -130,11 +137,11 @@ body{
         box-shadow: 5px 10px 10px rgba(0,0,0,.5);
         transition: left 1s ease-in-out;
     }
-    
+
     .side-toggle{
         left: -350px;
     }
-
+    
     .hamburger a{
         position: fixed;
         margin-left: 0;
@@ -164,5 +171,16 @@ body{
         font-size: 30px;
         color: rgb(235, 242, 243);
         padding-top: .3em;
+    }
+    
+}
+@media (max-width:500px){
+    .side{
+        width: 100%;
+        left: -520px;
+        border-right: none;
+    }
+    .side-toggle{
+        left: 0px;
     }
 }
