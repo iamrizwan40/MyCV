@@ -29,7 +29,7 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 50px);
     box-shadow: 5px 10px 10px rgba(0,0,0,.5);
-    border-right: 5px solid aliceblue;
+    border-right: 5px solid aliceblue;  
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -39,8 +39,25 @@ body{
     display: block;
     grid-row-start: 3;
     grid-row-end: 12;
+    padding: 0;
+    padding-left: 2em;
 }
-
+ul.side-menus ul{
+    display: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 1em;
+    padding-top: 0;
+}
+ul.side-menus ul li a{
+    color:rgb(4, 22, 22);
+    line-height: 2em;
+    
+}
+ul.side-menus ul li a:hover{
+    color: rgb(38, 63, 63);
+    text-decoration: none;
+}
 .side ul li a{
     text-decoration: none;
     color: #fff;
@@ -183,4 +200,13 @@ body{
     .side-toggle{
         left: 0px;
     }
+
+    .side .side-div{ 
+        margin-left: 100px;
+    }
+}
+
+a.fa{
+    // float: left;
+    margin-right: 20px;
 }

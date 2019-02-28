@@ -7623,7 +7623,24 @@ body {
   list-style: none;
   display: block;
   grid-row-start: 3;
-  grid-row-end: 12; }
+  grid-row-end: 12;
+  padding: 0;
+  padding-left: 2em; }
+
+ul.side-menus ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1em;
+  padding-top: 0; }
+
+ul.side-menus ul li a {
+  color: #041616;
+  line-height: 2em; }
+
+ul.side-menus ul li a:hover {
+  color: #263f3f;
+  text-decoration: none; }
 
 .side ul li a {
   text-decoration: none;
@@ -7730,6 +7747,11 @@ body {
     border-right: none; }
 
   .side-toggle {
-    left: 0px; } }
+    left: 0px; }
+
+  .side .side-div {
+    margin-left: 100px; } }
+a.fa {
+  margin-right: 20px; }
 
 /*# sourceMappingURL=main.css.map */

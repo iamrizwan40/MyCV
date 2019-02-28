@@ -8,3 +8,8 @@ $('.close a').click(function(){
 $(window).resize(function(e){
     e.preventDefault();
 })
+
+$('.cv').click(function(){
+    $('.sub-menus').slideToggle();
+    console.log('I am clicked');
+})
