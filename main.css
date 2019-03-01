@@ -7674,15 +7674,15 @@ ul.side-menus ul li a:hover {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
 
-.cv {
+.cv-header {
   display: inline-block;
   grid-column-start: 1;
   grid-column-end: 13; }
 
-.cv span:nth-child(1) {
+.cv-header span:nth-child(1) {
   font-size: 200%; }
 
-.cv span:nth-child(2) {
+.cv-header span:nth-child(2) {
   display: block;
   height: 5px;
   background-color: aliceblue;
