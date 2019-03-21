@@ -2,7 +2,6 @@
 // Option A: Include all of Bootstrap
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
 body{
     padding: 0;
     margin: 0;
@@ -15,6 +14,85 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/* Main sections starts here */
+.main{
+    margin-left: 250px;
+    margin-top: 40px;
+    padding: 2em 2em 0em 2em;
+}
+#header{
+    position: absolute;
+    top:100px;    
+    left: 120px;
+}
+.main-row{
+    position: relative;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    padding: 1em;
+
+}
+#my-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+.side-titles{
+    border-bottom: 2px solid gray;
+    text-align: left;
+    font-size: 140%;
+}
+.main-titles{
+    border-bottom: 2px solid gray;
+    font-size: 140%;
+}
+
+.career-summary-content{
+    margin: 20px 0px 20px 0px;
+}
+
+.education-content div.row{
+    margin-top: 20px;
+}
+.education-content div.row .year{
+    text-align: right;
+}
+.pinfo{
+    font-size: 90%;
+}
+
+.soft-skills, .programming-skills{
+    line-height: 2em;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.skills{
+    margin-top:10px;
+}
+.skills ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.career-summary-content  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.personal-info{
+    // background-image: radial-gradient(rgb(178, 236, 236), rgba(77, 148, 148, 0.5));
+    // color: white;
+}
+.main-info{
+    background-color: white;
+}
+/* main section ends */
+
 /* Side menus start */
 .side{
     box-sizing: border-box;
@@ -46,7 +124,7 @@ ul.side-menus ul{
     display: none;
     padding: 0;
     margin: 0;
-    padding-left: 1em;
+    // padding-left: 1em;
     padding-top: 0;
 }
 ul.side-menus ul li a{
@@ -73,12 +151,7 @@ ul.side-menus ul li a:hover{
 /* Side menus ends */
 
 /* main section starts */
-.main{
-    margin-left: 250px;
-    margin-top: 40px;
-    padding: 2em;
-}
-/* main section ends */
+
 
 
 /* header starts */
@@ -203,6 +276,20 @@ ul.side-menus ul li a:hover{
 
     .side .side-div{ 
         margin-left: 30px;
+    }
+    
+    .hamburger a{
+        position: fixed;
+        top: 0;
+        margin-left: 0;
+        margin-top: 0px;
+        font-size: 36px;
+        font-weight: bold;
+        color:rgb(209, 219, 219);
+        text-decoration: none;
+        // background-color: rgba(76, 112, 145,.4);
+        padding-left: .3em;
+        padding-right: .3em;
     }
 }
 

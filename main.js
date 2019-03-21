@@ -1,8 +1,8 @@
 $('.hamburger a').click(function(){
-    $('.side').toggleClass('side-toggle');
+    $('.side').addClass('side-toggle');
 })
 $('.close a').click(function(){
-    $('.side').toggleClass('side-toggle');
+    $('.side').removeClass('side-toggle');
 })
 
 $(window).resize(function(e){
@@ -13,3 +13,5 @@ $('.cv').click(function(){
     $('.sub-menus').slideToggle();
     console.log('I am clicked');
 })
+
+
