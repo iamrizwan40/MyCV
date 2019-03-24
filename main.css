@@ -9711,10 +9711,12 @@ body {
 
 .career-summary-content {
   margin: 20px 0px 20px 0px;
+  letter-spacing: 1px;
 }
 
 .education-content div.row {
   margin-top: 20px;
+  letter-spacing: 1px;
 }
 
 .education-content div.row .year {
@@ -9723,6 +9725,8 @@ body {
 
 .pinfo {
   font-size: 90%;
+  padding: 0;
+  margin: 0;
 }
 
 .soft-skills, .programming-skills {
@@ -9736,15 +9740,32 @@ body {
 }
 
 .skills ul {
-  padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 .career-summary-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.duties-resp-content {
+  margin-top: 20px;
+  padding: 1em;
+}
+
+.duties-resp-content ul {
+  padding: 0;
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.duties-resp-content div.row ul {
+  margin-top: 20px;
+}
+
+.duties-resp-content div.row ul li {
+  line-height: 2em;
 }
 
 .main-info {
@@ -9889,6 +9910,22 @@ ul.side-menus ul li a:hover {
     padding-left: 0;
     padding-right: 0;
   }
+}
+@media (max-width: 1200px) {
+  .side {
+    width: 100%;
+    left: -1220px;
+    border-right: none;
+    transition: left 1s ease-in-out;
+  }
+
+  .side-toggle {
+    left: 0px;
+  }
+
+  .side .side-div {
+    margin-left: 30px;
+  }
 
   .close a {
     display: block;
@@ -9899,21 +9936,6 @@ ul.side-menus ul li a:hover {
     font-size: 30px;
     color: #ebf2f3;
     padding-top: 0.3em;
-  }
-}
-@media (max-width: 500px) {
-  .side {
-    width: 100%;
-    left: -520px;
-    border-right: none;
-  }
-
-  .side-toggle {
-    left: 0px;
-  }
-
-  .side .side-div {
-    margin-left: 30px;
   }
 
   .hamburger a {
@@ -9927,6 +9949,11 @@ ul.side-menus ul li a:hover {
     text-decoration: none;
     padding-left: 0.3em;
     padding-right: 0.3em;
+  }
+
+  .main {
+    margin: 0;
+    margin-top: 40px;
   }
 }
 a.fa {

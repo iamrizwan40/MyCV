@@ -53,16 +53,20 @@ body{
 
 .career-summary-content{
     margin: 20px 0px 20px 0px;
+    letter-spacing: 1px;
 }
 
 .education-content div.row{
     margin-top: 20px;
+    letter-spacing: 1px;
 }
 .education-content div.row .year{
     text-align: right;
 }
 .pinfo{
     font-size: 90%;
+    padding: 0;
+    margin: 0;
 }
 
 .soft-skills, .programming-skills{
@@ -75,18 +79,31 @@ body{
     margin-top:10px;
 }
 .skills ul{
-    padding: 0;
+    
     margin: 0;
-    list-style: none;
+    
+    // list-style: none;
 }
 .career-summary-content  ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.personal-info{
-    // background-image: radial-gradient(rgb(178, 236, 236), rgba(77, 148, 148, 0.5));
-    // color: white;
+.duties-resp-content{
+    margin-top: 20px;
+    padding: 1em;
+}
+.duties-resp-content ul{
+    padding: 0;
+    margin: 0;
+    padding-left: 1.2em;
+    // list-style-type: none;
+}
+.duties-resp-content div.row ul{
+    margin-top: 20px;
+}
+.duties-resp-content div.row ul li{
+    line-height: 2em;
 }
 .main-info{
     background-color: white;
@@ -215,6 +232,8 @@ ul.side-menus ul li a:hover{
     padding-top: .3em;
 }
 
+
+// @media (max-width:)
 @media (max-width:785px){
     .side{
         position: fixed;
@@ -251,7 +270,21 @@ ul.side-menus ul li a:hover{
         padding-left: 0;
         padding-right: 0;
     }
+}
+@media (max-width:1200px){
+    .side{
+        width: 100%;
+        left: -1220px;
+        border-right: none;
+        transition: left 1s ease-in-out;
+    }
+    .side-toggle{
+        left: 0px;
+    }
 
+    .side .side-div{ 
+        margin-left: 30px;
+    }
     .close a{
         display: block;
         float: right;
@@ -262,22 +295,6 @@ ul.side-menus ul li a:hover{
         color: rgb(235, 242, 243);
         padding-top: .3em;
     }
-    
-}
-@media (max-width:500px){
-    .side{
-        width: 100%;
-        left: -520px;
-        border-right: none;
-    }
-    .side-toggle{
-        left: 0px;
-    }
-
-    .side .side-div{ 
-        margin-left: 30px;
-    }
-    
     .hamburger a{
         position: fixed;
         top: 0;
@@ -290,6 +307,10 @@ ul.side-menus ul li a:hover{
         // background-color: rgba(76, 112, 145,.4);
         padding-left: .3em;
         padding-right: .3em;
+    }
+    .main{
+        margin: 0;
+        margin-top: 40px;
     }
 }
 
